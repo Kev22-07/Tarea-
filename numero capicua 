@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "=== VERIFICADOR DE NUMERO CAPICUA (4 DIGITOS) ===" << endl;
+    cout << "Ingrese un numero de 4 digitos: ";
+    cin >> num;
+
+    if (num >= 1000 && num <= 9999) {
+        int d1 = num / 1000;         // Millar
+        int d2 = (num / 100) % 10;   // Centena
+        int d3 = (num / 10) % 10;    // Decena
+        int d4 = num % 10;           // Unidad
+
+        if (d1 == d4 && d2 == d3) {
+            cout << "El numero " << num << " SI es capicua." << endl;
+        } else {
+            cout << "El numero " << num << " NO es capicua." << endl;
+        }
+    } else {
+        cout << "Error: El numero ingresado no tiene 4 digitos." << endl;
+    }
+
+    return 0;
+}
