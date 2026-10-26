@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string> 
+using namespace std;
+int main() {
+
+string CLAVE_SECRETA = "1234";
+ string claveIngresada;
+
+do {
+
+cout << "Ingrese la clave secreta: "; 
+cin >> claveIngresada;
+
+A?
+
+if
+
+Mostrar "Clave incorrecta. Intente nuevamente."
+
+} while
+
+(claveIngresada != CLAVE_SECRETA) { cout << "Clave incorrecta. Intente nuevamente.\n\n";
+
+(claveIngresada CLAVE_SECRETA);
+
+o!
+
+a."
+
+cout << "\n¡Acceso concedido! Bienvenido al sistema.\n";
+
+return 0;
