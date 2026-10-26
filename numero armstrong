@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "=== VERIFICADOR DE NUMERO ARMSTRONG (4 DIGITOS) ===" << endl;
+    cout << "Ingrese un numero de 4 digitos: ";
+    cin >> num;
+
+    if (num >= 1000 && num <= 9999) {
+        int d1 = num / 1000;
+        int d2 = (num / 100) % 10;
+        int d3 = (num / 10) % 10;
+        int d4 = num % 10;
+
+        int suma = (d1 * d1 * d1 * d1) + 
+                   (d2 * d2 * d2 * d2) + 
+                   (d3 * d3 * d3 * d3) + 
+                   (d4 * d4 * d4 * d4);
+
+        if (suma == num) {
+            cout << "El numero " << num << " SI es un numero Armstrong." << endl;
+        } else {
+            cout << "El numero " << num << " NO es un numero Armstrong." << endl;
+        }
+    } else {
+        cout << "Error: El numero ingresado no tiene 4 digitos." << endl;
+    }
+
+    return 0;
+}
