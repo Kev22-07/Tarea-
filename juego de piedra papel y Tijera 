@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int p1, p2;
+    char op = 's';
+
+    while (op == 's' || op == 'S') {
+        cout << "J1 (1:Piedra, 2:Papel, 3:Tijera): "; cin >> p1;
+        cout << "J2 (1:Piedra, 2:Papel, 3:Tijera): "; cin >> p2;
+
+        if (p1 == p2) cout << "Empate!\n";
+        else if ((p1==1 && p2==3) || (p1==2 && p2==1) || (p1==3 && p2==2)) cout << "Gana J1!\n";
+        else cout << "Gana J2!\n";
+
+        cout << "Otra vez? (s/n): "; cin >> op;
+    }
+    return 0;
+}
